@@ -13,6 +13,10 @@ O objetivo deste projeto é ser simples e funcional, servindo como um espaço pa
 
 Criar uma página inicial de portfólio simples e objetiva, onde posso expor meus trabalhos e experiências iniciais como desenvolvedora web.
 
+## 🗂️ Versionamento
+
+Este projeto foi criado e é versionado utilizando **Git**, com hospedagem no **GitHub**, permitindo o acompanhamento do histórico de desenvolvimento.
+
 ## 📌 Funcionalidades
 
 - Página de apresentação
