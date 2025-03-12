@@ -71,7 +71,7 @@ header .logo {
 
 header .menu a {
     margin-left: 20px;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 .hero {
@@ -125,11 +125,14 @@ header .menu a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
-    padding-top: 10px;
+    gap: 20px;
+    padding-top: 30px;
 }
 
-.hero .texto-hero .botoes button {
+.hero .texto-hero .botoes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     box-shadow: none;
     outline: none;
@@ -141,40 +144,62 @@ header .menu a {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.hero .texto-hero .botoes button:hover {
+.hero .texto-hero .botoes a:hover {
     background-color: #d19577;
     cursor: pointer;
-    color: #1D3557;
     transform: scale(1.1);
 }
 
-.hero .texto-hero .botoes button i {
+.hero .texto-hero .botoes a i {
     font-size: 2vw;
     color: #eae8e9;
 }
 
 .sobre {
-    width: 80%;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px); /* opcional: anima de baixo pra cima */
+    animation: fadeIn 1.2s ease-out forwards;
+    animation-delay: 0.3s; /* opcional */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sobre .conteudo-sobre {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
     justify-content: center;
-    padding: 60px 40px;
     text-align: center;
-    height: 70vh;
+    width: 80%;
     border-radius: 40px;
     border: 2px solid #2e2022;
     box-shadow: 0 1px 4px #2e2022;
+    height: 80vh;
+        margin: 0 auto 20px;
 }
 
-.sobre h2 {
+h2 {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3vw;
-    color: #1D3557;
     margin-bottom: 20px;
     color: #eae8e9;
 }
 
 .sobre p {
-    max-width: 700px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1vw;
+    max-width: 80%;
     margin: 0 auto 20px;
     text-align: justify;
     color: #eae8e9;
@@ -184,28 +209,90 @@ header .menu a {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 20px;
 }
 
-.sobre .botoes .btn {
-    padding: 12px 25px;
-    color: F1FAEE;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.sobre .botoes .btn:hover {
-    
-}
-
-.projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    height: 100vh;
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2vw;
+    margin-bottom: 20px;
     color: #eae8e9;
 }
 
+.sobre h3 {
+    padding-top: 20px;
+}
+
+.sobre .icones i {
+    font-size: 3vw;
+}
+
+.projetos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+    color: #eae8e9;
+    padding-top: 40px;
+}
+
+.projetos .lista-projetos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.projetos .lista-projetos .projeto-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 380px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #eae8e9;
+}
+
+.projetos .lista-projetos .projeto-detalhes img {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.projetos .lista-projetos .projeto-detalhes span {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2e2022;
+}
+
+.projetos .lista-projetos .projeto-detalhes p {
+    font-size: 1vw;
+    margin-top: 10px;
+    color: #2e2022;
+    max-width: 80%;
+}
+
+.projetos .lista-projetos .projeto-detalhes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    background-color: #2e2022;
+    border-radius: 5px;
+    font-size: 1vw;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 .contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 60px 40px;
     text-align: center;
     color: #eae8e9;
@@ -215,6 +302,67 @@ header .menu a {
     font-size: 2rem;
     color: #eae8e9;
     margin-bottom: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+    padding-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+}
+
+.form label {
+    display: flex;
+    
+    color: #eae8e9;
+    line-height: 1;
+    margin-bottom: 1px;
+}
+
+.form input,
+.form textarea {
+    font-family: "Ubuntu", sans-serif;
+    padding: 10px;
+    margin-bottom: 4px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color,
+    box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #57658a;
+    box-shadow: 0 0 0 3px #57658a;
+}
+
+.form button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    color: #eae8e9;
+    background-color: #57658a;
+    border: none;
 }
 
 footer {

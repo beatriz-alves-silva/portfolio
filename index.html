@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.ico">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
@@ -15,6 +17,7 @@
     <header>
         <div class="logo">bsilva</div>
         <nav class="menu">
+            <a href="#">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
@@ -28,51 +31,92 @@
         </div>
 
         <div class="texto-hero">
-            <h1>Olá! Eu sou Beatriz</h1>
+            <h1>Oi, eu sou Beatriz!</h1>
             <p>Estudante de Ciência da Computação - UTFPR.</p>
             <p>Em busca da primeira oportunidade profissional na área de <span>Desenvolvimento Web Front-End.</span></p>
             <div class="botoes">
-                <button><i class='bx bxl-github'></i></button>
-                <button><i class='bx bxl-linkedin-square'></i></button>
+                <a href="https://github.com/beatriz-alves-silva" target="_blank" >
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="http://www.linkedin.com/in/%20beatriz-alves-s" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a href="#contato">
+                    <i class='bx bxs-envelope'></i>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="sobre" id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Me chamo Beatriz Silva, tenho 27 anos, sou natural do interior de São Paulo e atualmente moro no Paraná.  
-        Estou cursando o 5° período de Ciência da Computação na Universidade Tecnológica Federal do Paraná e estou em busca da minha primeira oportunidade profissional na área de Desenvolvimento Web Front-End.</p>
+        <div class="conteudo-sobre">
+            <h2>Sobre mim</h2>
+            <p>Me chamo Beatriz Silva, tenho 27 anos, sou natural do interior de São Paulo e atualmente moro no Paraná.  
+            Estou cursando o 5° período de Ciência da Computação na Universidade Tecnológica Federal do Paraná e estou em busca da minha primeira oportunidade profissional na área de Desenvolvimento Web Front-End.</p>
+            <p>Sou apaixonada por aprender e estou sempre em busca de novos desafios. Estou disposta a me aprofundar nas tecnologias necessárias para entregar soluções de qualidade e estou animada para aplicar meus conhecimentos em um ambiente profissional.</p>
 
-        <p>Sou apaixonada por aprender e estou sempre em busca de novos desafios. Estou disposta a me aprofundar nas tecnologias necessárias para entregar soluções de qualidade e estou animada para aplicar meus conhecimentos em um ambiente profissional. Minha motivação é aprimorar minhas habilidades constantemente, colaborar com uma equipe e seguir crescendo como desenvolvedora.</p>
-
-        <div class="botoes">
-            <a href="#projetos" class="btn">Ver meus projetos</a>
-            <a href="#contato" class="btn">Fale comigo</a>
-        </div>
-
-        <h3>Tecnologias e Ferramentas</h3>
-        <p>Essas são algumas das tecnologias e ferramentas que já utilizei em projetos acadêmicos e pessoais:</p>
-        <p>
-
-        </p>
-
-        <div class="redes">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <h3>Tecnologias e Ferramentas</h3>
+            <p>Essas são algumas das tecnologias e ferramentas que já utilizei em projetos acadêmicos e pessoais:</p>
+            <div class="icones">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-java-plain colored"></i>
+                <i class="devicon-python-plain colored"></i>
+                <i class="devicon-c-plain colored"></i>
+                <i class="devicon-git-plain colored"></i>
+                <i class="devicon-github-original"></i>
+                <i class="devicon-figma-plain colored"></i>
+            </div>
         </div>
     </section>
 
     <section class="projetos" id="projetos">
         <h2>Projetos Recentes</h2>
-        <div class="projeto">
 
+        <div class="lista-projetos">
+            <div class="projeto-detalhes">
+                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
+                <span>Colheita Financeira</span>
+                <p>Jogo educacional com foco em educação financeira para pessoas com deficiência intelectual</p>
+                <a href="#" class="btn">Ver projeto</a>
+            </div>
+    
+            <div class="projeto-detalhes">
+                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
+                <span>Projeto 1</span>
+                <p>Descrição do projeto 1</p>
+                <a href="#" class="btn">Ver projeto</a>
+            </div>
+    
+            <div class="projeto-detalhes">
+                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
+                <span>Projeto 1</span>
+                <p>Descrição do projeto 1</p>
+                <a href="#" class="btn">Ver projeto</a>
+            </div>
         </div>
     </section>
 
     <section class="contato" id="contato">
         <h2>Entre em Contato</h2>
-        <p>Me mande uma mensagem! Estou aberta para novas oportunidades.</p>
-        <a href="mailto:beatriz@email.com" class="btn">Enviar E-mail</a>
+        <p>Estou aberta a novas conexões e oportunidades. Entre em contato e vamos conversar!</p>
+        <form action="https://formsubmit.co/beatriz.alves.silva.cc@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required/>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/>
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="#">
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
