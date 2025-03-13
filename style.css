@@ -389,44 +389,133 @@ footer {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     .hero {
         flex-direction: column;
-        height: auto;
-        padding-top: 100px;
     }
 
-    .hero .imagem-hero img {
-        width: 80%;
-    }
-
-    .hero .texto-hero h1 {
-        font-size: 60px;
-        text-align: center;
+    .hero .texto-hero {
+        align-items: center;
     }
 
     .hero .texto-hero p {
         text-align: center;
     }
-
-    .skills {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        padding: 20px;
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
     }
 
-    header nav {
-        flex-direction: column;
-        gap: 10px;
+    .hero .imagem-hero img {
+        width: 400px;
+    }
+
+    .hero .texto-hero h1 {
+        font-size: 60px;
+    }
+
+    .hero .texto-hero p {
+        font-size: 20px;
+    }
+
+    .hero .texto-hero .botoes a {
+        width: 120px;
+        height: 40px;
+    }
+
+    .sobre .conteudo-sobre {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .skills-icons i {
+        font-size: 45px;
+    }
+
+    .contato p {
+        font-size: 18px;
+        width: 350px;
     }
 
     .form {
-        width: 100%;
+        width: 350px;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
+
+    .redes span {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
+
+@media (max-width: 490px) {
+
+    .hero .imagem-hero img {
+        width: 350px;
+    }
+
+    .hero .texto-hero h1 {
+        font-size: 40px;
+    }
+
+    .hero .texto-hero p {
+        font-size: 16px;
+    }
+
+    .hero .texto-hero .botoes a {
+        width: 100px;
+    }
+
+    .sobre .conteudo-sobre {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .skills-icons i {
+        font-size: 35px;
+    }
+
+    .contato p {
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .form {
+        width: 350px;
+    }
+
+    .redes span {
+        font-size: 16px;
+    }
+}
+
