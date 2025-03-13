@@ -1,0 +1,18 @@
+[
+{
+        "titulo": "Jogo de Fazenda",
+        "descricao": "Um jogo educacional que ensina educação financeira para crianças através de atividades agrícolas.",
+        "imagemCapa": "/assets/images/projeto-1/capa-jogo.png",
+        "tecnologias": ["HTML", "CSS", "JavaScript"],
+        "linkRepositorio": "https://github.com/beatriz-alves-silva/jogo-colheita-financeira",
+        "linkSite": "https://colheitafinanceira.netlify.app/"
+    },
+    {
+        "titulo": "Jogo de Fazenda",
+        "descricao": "Um jogo educacional que ensina educação financeira para crianças através de atividades agrícolas.",
+        "imagemCapa": "/assets/images/projeto-1/capa-jogo.png",
+        "tecnologias": ["HTML", "CSS", "JavaScript"],
+        "linkRepositorio": "https://github.com/beatriz-alves-silva/jogo-fazenda",
+        "linkSite": "https://beatrizalvessilva.github.io/jogo-fazenda"
+    }
+]
