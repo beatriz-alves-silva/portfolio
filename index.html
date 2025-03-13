@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio Beatriz</title>
 </head>
 <body>
     <header>
@@ -24,25 +24,27 @@
         </nav>
     </header>
 
-    <!-- "hero" é a primeira área de destaque do site -->
     <section class="hero">
         <div class="imagem-hero">
-            <img src="/assets/images/foto-perfil-2.png" alt="Foto de perfil Beatriz">
+            <img src="/assets/images/foto-perfil-3.png" alt="Foto de perfil Beatriz">
         </div>
 
         <div class="texto-hero">
-            <h1>Oi, eu sou Beatriz!</h1>
+            <h1>Eu sou Beatriz,</h1>
             <p>Estudante de Ciência da Computação - UTFPR.</p>
-            <p>Em busca da primeira oportunidade profissional na área de <span>Desenvolvimento Web Front-End.</span></p>
+            <p>Em busca da primeira oportunidade profissional na área de <span>Desenvolvimento Front-End.</span></p>
             <div class="botoes">
                 <a href="https://github.com/beatriz-alves-silva" target="_blank" >
                     <i class='bx bxl-github'></i>
+                    GitHub
                 </a>
-                <a href="http://www.linkedin.com/in/%20beatriz-alves-s" target="_blank">
+                <a href="https://www.linkedin.com/in/beatriz-alves-s/" target="_blank">
                     <i class='bx bxl-linkedin-square'></i>
+                    LinkedIn
                 </a>
                 <a href="#contato">
                     <i class='bx bxs-envelope'></i>
+                    Contato
                 </a>
             </div>
         </div>
@@ -52,77 +54,91 @@
         <div class="conteudo-sobre">
             <h2>Sobre mim</h2>
             <p>Me chamo Beatriz Silva, tenho 27 anos, sou natural do interior de São Paulo e atualmente moro no Paraná.  
-            Estou cursando o 5° período de Ciência da Computação na Universidade Tecnológica Federal do Paraná e estou em busca da minha primeira oportunidade profissional na área de Desenvolvimento Web Front-End.</p>
+            Estou cursando o 5° período de Ciência da Computação na Universidade Tecnológica Federal do Paraná e procuro minha primeira experiência profissional como desenvolvedora Front-End.</p>
             <p>Estou disposta a aprender e me aprofundar nas tecnologias necessárias para contribuir e ser uma adição valiosa ao projeto no qual terei a oportunidade de participar. Estou animada para começar minha caminhada profissional e vivenciar o dia a dia de uma equipe, compartilhando ideias e aprendendo com cada desafio.</p>
 
             <h3>Tecnologias e Ferramentas</h3>
             <p>Essas são algumas das tecnologias e ferramentas que já utilizei em projetos acadêmicos e pessoais:</p>
-            <div class="icones">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-typescript-plain colored"></i>
-                <i class="devicon-java-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
-                <i class="devicon-c-plain colored"></i>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-original"></i>
-                <i class="devicon-figma-plain colored"></i>
-            </div>
+            <section class="skills">
+                <div class="skills-category">
+                    <h4>Front-End</h4>
+                    <div class="skills-icons">
+                        <i class="devicon-html5-plain colored" title="HTML5"></i>
+                        <i class="devicon-css3-plain colored" title="CSS3"></i>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                        <i class="devicon-typescript-plain colored" title="TypeScript"></i>
+                        <i class="devicon-figma-plain colored" title="Figma"></i>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h4>Back-End</h4>
+                    <div class="skills-icons">
+                        <i class="devicon-java-plain colored" title="Java"></i>
+                        <i class="devicon-python-plain colored" title="Python"></i>
+                        <i class="devicon-csharp-plain colored" title="C#"></i>
+                        <i class="devicon-c-plain colored" title="C"></i>
+                        <i class="devicon-azuresqldatabase-plain colored"></i>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h4>Controle de Versão</h4>
+                    <div class="skills-icons">
+                        <i class="devicon-git-plain colored" title="Git"></i>
+                        <i class="devicon-github-original colored" title="GitHub"></i>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
     <section class="projetos" id="projetos">
         <h2>Projetos Recentes</h2>
-
-        <div class="lista-projetos">
-            <div class="projeto-detalhes">
-                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
-                <span>Colheita Financeira</span>
-                <p>Jogo educacional com foco em educação financeira para pessoas com deficiência intelectual</p>
-                <a href="#" class="btn">Ver projeto</a>
-            </div>
-    
-            <div class="projeto-detalhes">
-                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
-                <span>Projeto 1</span>
-                <p>Descrição do projeto 1</p>
-                <a href="#" class="btn">Ver projeto</a>
-            </div>
-    
-            <div class="projeto-detalhes">
-                <img src="/assets/images/projeto-1/capa-jogo.png" alt="Projeto 1">
-                <span>Projeto 1</span>
-                <p>Descrição do projeto 1</p>
-                <a href="#" class="btn">Ver projeto</a>
-            </div>
-        </div>
+        <!-- aqui entram os projetos do arquivo json-->
+        <div class="projetos-container" id="projetos-container"></div>
     </section>
 
     <section class="contato" id="contato">
         <h2>Entre em Contato</h2>
         <p>Estou aberta a novas conexões e oportunidades. Entre em contato e vamos conversar!</p>
-        <form action="https://formsubmit.co/beatriz.alves.silva.cc@gmail.com" method="POST" class="form">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required/>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required/>
-
-            <label for="message">Mensagem</label>
-            <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
-
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="#">
-
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="contato-container">
+            <form action="https://formsubmit.co/beatriz.alves.silva.cc@gmail.com" method="POST" class="form">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome" required/>
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required/>
+    
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+    
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmacao.html">
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <div class="redes-container">
+            <div class="redes">
+                <span>
+                    <i class='bx bxl-github'></i>
+                    github.com/beatriz-alves-silva
+                </span>
+    
+                <span>
+                    <i class='bx bxl-linkedin-square'></i>
+                    linkedin.com/in/beatriz-alves-s
+                </span>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Beatriz Alves da Silva</p>
+        <p>&copy; 2025 Beatriz Alves | beatriz.alves.silva.cc@gmail.com</p>
     </footer>
-
 </body>
+<script src="/script.js"></script>
 </html>
-
