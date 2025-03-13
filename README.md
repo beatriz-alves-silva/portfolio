@@ -5,7 +5,7 @@ O objetivo deste projeto é ser simples e funcional, servindo como um espaço pa
 
 ## Objetivo do Projeto
 
-Criar uma página inicial de portfólio simples e objetiva, onde posso expor meus trabalhos e experiências iniciais como desenvolvedora web.
+Criar uma página inicial de portfólio simples e objetiva, onde posso expor meus trabalhos e experiências iniciais como desenvolvedora front-end.
 
 ## Versionamento
 
