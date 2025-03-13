@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    min-width: 400px;
 }
 
 a {
@@ -55,6 +56,15 @@ header .logo {
     font-size: 20px;
     font-weight: bold;
     color: #eae8e9;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #eae8e9;
+    cursor: pointer;
 }
 
 header nav {
@@ -404,6 +414,33 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #3F3F3F;
+        position: absolute;
+        top: 70px; 
+        right: 40px;
+        width: 150px;
+        padding: 20px;
+        gap: 8px;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px #eae8e9;
+    }
+    
+    nav.menu.active {
+        display: flex;
+    }
+    
+    header {
+        justify-content: space-between;
+    }
+    
     .hero {
         height: auto;
     }
@@ -423,6 +460,15 @@ footer {
     .hero .texto-hero .botoes a {
         width: 120px;
         height: 40px;
+    }
+
+    .sobre {
+        padding: 40px 10px;
+    }
+
+    .sobre .conteudo-sobre {
+        padding: 5px;
+        width: 100%;
     }
 
     .sobre .conteudo-sobre {
@@ -470,7 +516,7 @@ footer {
 @media (max-width: 490px) {
 
     .hero .imagem-hero img {
-        width: 350px;
+        width: 320px;
     }
 
     .hero .texto-hero h1 {
@@ -483,10 +529,6 @@ footer {
 
     .hero .texto-hero .botoes a {
         width: 100px;
-    }
-
-    .sobre .conteudo-sobre {
-        width: 90%;
     }
 
     h2 {
@@ -511,7 +553,7 @@ footer {
     }
 
     .form {
-        width: 350px;
+        width: 300px;
     }
 
     .redes span {
@@ -519,3 +561,6 @@ footer {
     }
 }
 
+@media (max-width: 320px) {
+
+}
