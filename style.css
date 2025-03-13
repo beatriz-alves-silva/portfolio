@@ -53,8 +53,10 @@ header {
 }
 
 header .logo {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
     color: #eae8e9;
 }
 
