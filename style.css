@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    min-width: 390px;
+    min-width: 320px;
 }
 
 a {
@@ -209,6 +209,7 @@ h2 {
     font-size: 50px;
     margin-bottom: 20px;
     color: #eae8e9;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -216,12 +217,14 @@ h3 {
     font-size: 40px;
     margin: 40px 0 20px 0;
     color: #eae8e9;
+    letter-spacing: 1px;
 }
 
 h4 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     color: #eae8e9;
+    letter-spacing: 1px;
 }
 
 /* SKILLS */
@@ -311,6 +314,7 @@ h4 {
 .projeto-detalhes .btn {
     display: inline-block;
     padding: 10px 20px;
+    font-size: 16px;
     background-color: #57658a;
     color: #eae8e9;
     border-radius: 5px;
@@ -365,6 +369,7 @@ h4 {
     color: #eae8e9;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -480,6 +485,7 @@ footer {
 
     .sobre .conteudo-sobre {
         width: 90%;
+        padding: 10px 0 5px 0;
     }
 
     h2 {
@@ -494,8 +500,16 @@ footer {
         font-size: 30px;
     }
 
+    h4 {
+        font-size: 25px;
+    }
+
     .skills-icons i {
         font-size: 45px;
+    }
+
+    .projetos {
+        padding: 0px 20px;
     }
 
     .contato p {
@@ -546,6 +560,10 @@ footer {
         font-size: 25px;
     }
 
+    h4 {
+        font-size: 20px;
+    }
+
     .sobre p {
         font-size: 16px;
     }
@@ -568,6 +586,83 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
+    .hero .texto-hero p {
+        margin-bottom: 5px;
+    }
 
+    .hero .texto-hero .botoes {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .hero .texto-hero .botoes a {
+        height: 35px;
+    }
+
+    .hero .imagem-hero img {
+        width: 280px;
+    }
+
+    .hero .texto-hero h1 {
+        font-size: 35px;
+    }
+
+    .hero .texto-hero p {
+        font-size: 16px;
+    }
+
+    .hero .texto-hero .botoes a {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .skills-icons i {
+        font-size: 35px;
+    }
+
+    .projeto-detalhes {
+        width: 250px;
+    }
+
+    .projeto-detalhes .botoes {
+        flex-direction: column;
+    }
+
+    .projeto-detalhes .btn {
+        font-size: 14px;
+    }
+
+    .contato p {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .form {
+        width: 200px;
+    }
+
+    .form button {
+        font-size: 14px;
+    }
+
+    .redes span {
+        font-size: 16px;
+    }
 }
