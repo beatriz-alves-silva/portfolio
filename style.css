@@ -535,6 +535,14 @@ footer {
 }
 
 @media (max-width: 490px) {
+    header {
+        padding: 2px 20px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+    
 
     .hero .imagem-hero img {
         width: 320px;
@@ -546,10 +554,6 @@ footer {
 
     .hero .texto-hero p {
         font-size: 16px;
-    }
-
-    .hero .texto-hero .botoes a {
-        width: 100px;
     }
 
     h2 {
@@ -596,10 +600,6 @@ footer {
         gap: 15px;
         margin-top: 10px;
     }
-    
-    .hero .texto-hero .botoes a {
-        height: 35px;
-    }
 
     .hero .imagem-hero img {
         width: 280px;
@@ -614,7 +614,7 @@ footer {
     }
 
     .hero .texto-hero .botoes a {
-        width: 100px;
+        width: 200px;
     }
 
     h2 {
@@ -651,7 +651,7 @@ footer {
 
     .contato p {
         font-size: 16px;
-        width: 200px;
+        width: 250px;
     }
 
     .form {
