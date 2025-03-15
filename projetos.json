@@ -9,8 +9,8 @@
     },
     {
         "titulo": "E-commerce",
-        "descricao": "Loja virtual para uma empresa fictícia.",
-        "imagemCapa": "",
+        "descricao": "Loja virtual para uma empresa de jogos fictícia.",
+        "imagemCapa": "/assets/images/projeto-2/capa.png",
         "tecnologias": ["HTML", "CSS", "JavaScript"],
         "linkRepositorio": "https://github.com/beatriz-alves-silva/xp-store",
         "linkSite": "https://xp-store.netlify.app/"
